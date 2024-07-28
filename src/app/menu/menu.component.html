@@ -1,0 +1,104 @@
+<div class="text-center">
+        <span class="fs-5 d-none d-sm-inline text-danger h4">Pizza Order<hr/></span>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Toppings</th>
+                    <th colspan="4">Pizza Size</th>
+                  </tr>
+              <tr>
+                <th scope="col" style="text-align: left;">Veg Toppings</th>
+                <th scope="col">Small($5)</th>
+                <th scope="col">Medium($7)</th>
+                <th scope="col">Large($8)</th>
+                <th scope="col">Extra Large($9)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" style="text-align: left;">Tomatoes($1.00)</th>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="small[0].ischeck" (change)="onChange(0,'s')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[0].ischeck" (change)="onChange(0,'m')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[0].ischeck" (change)="onChange(0,'l')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="extra[0].ischeck" (change)="onChange(0,'e')"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Onions($0.50)</th>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="small[1].ischeck" (change)="onChange(1,'s')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[1].ischeck" (change)="onChange(1,'m')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[1].ischeck" (change)="onChange(1,'l')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="extra[1].ischeck" (change)="onChange(1,'e')"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Bellpepper($1.00)</th>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="small[2].ischeck" (change)="onChange(2,'s')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[2].ischeck" (change)="onChange(2,'m')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[2].ischeck" (change)="onChange(2,'l')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="extra[2].ischeck" (change)="onChange(2,'e')"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Mushrooms($1.20)</th>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="small[3].ischeck" (change)="onChange(3,'s')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[3].ischeck" (change)="onChange(3,'m')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[3].ischeck" (change)="onChange(3,'l')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="extra[3].ischeck" (change)="onChange(3,'e')"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Pineapple($0.75)</th>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="small[4].ischeck" (change)="onChange(4,'s')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[4].ischeck" (change)="onChange(4,'m')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[4].ischeck" (change)="onChange(4,'l')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="extra[4].ischeck" (change)="onChange(4,'e')"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Non Veg Toppings</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Sausage($1.00)</th>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="small[5].ischeck" (change)="onChange(5,'s')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[5].ischeck" (change)="onChange(5,'m')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[5].ischeck" (change)="onChange(5,'l')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="extra[5].ischeck" (change)="onChange(5,'e')"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Pepperoni($2.00)</th>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="small[6].ischeck" (change)="onChange(6,'s')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[6].ischeck"  (change)="onChange(6,'m')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[6].ischeck" (change)="onChange(6,'l')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="extra[6].ischeck" (change)="onChange(6,'e')"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Barbecue Chicken($3.00)</th>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="small[7].ischeck" (change)="onChange(7,'s')" ></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[7].ischeck" (change)="onChange(7,'m')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[7].ischeck" (change)="onChange(7,'l')"></td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="extra[7].ischeck" (change)="onChange(7,'e')"></td>
+              </tr>
+              <tr>
+                <th colspan="5" style="text-align: left;">total</th>
+                
+              </tr>
+              <tr>
+                <th scope="row" style="text-align: left;">Offer</th>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[8].ischeck"  (change)="onChange(8,'m')">  Offer1<br/>
+                    <input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="medium[9].ischeck"  (change)="onChange(9,'m')">  Offer2</td>
+                <td><input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="large[8].ischeck" (change)="onChange(8,'l')">  Offer3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>{{smallSum!=5?smallSum:''}}</td>
+                <td>{{midiumSum!=7?midiumSum:''}}</td>
+                <td>{{largeSum!=8?largeSum:''}}</td>
+                <td>{{extraSum!=9?extraSum:''}}</td>
+              </tr>
+
+            </tbody>
+          </table>
+</div>
